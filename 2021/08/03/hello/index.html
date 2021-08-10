@@ -295,11 +295,11 @@
 
 
     
-        <div id="gitments"></div>
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
+        <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 <script>
-    var gitment = new Gitment({
+    var gitalk = new Gitalk({
       id: window.location.pathname,
       owner: 'zpx1008@gmail.com',
       repo: 'hioio.github.io',
@@ -308,7 +308,7 @@
         client_secret: '5a4886a48ac6cceb3efb39ae0d74552739ec84ec',
       },
     })
-    gitment.render('gitments')
+    gitalk.render('gitalk-container')
 </script>
     
 
