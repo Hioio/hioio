@@ -294,23 +294,30 @@
 
 
 
-    
-        <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+	
+       <div id="gitalk-container"></div>
+       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-<script>
-    var gitalk = new Gitalk({
-	  client_id: '84d2804e39c3ae5b2388',
-      client_secret: '5a4886a48ac6cceb3efb39ae0d74552739ec84ec',
-      id: window.location.pathname,
-      owner: 'Hioio',
-      repo: 'hioio.github.io',
-    })
-    gitalk.render('gitalk-container')
+
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+	  clientID: '84d2804e39c3ae5b2388',
+	  clientSecret: '5a4886a48ac6cceb3efb39ae0d74552739ec84ec',
+	  repo: 'hioio.github.io',
+	  owner: 'Hioio',
+	  id: location.pathname,
+	  labels: [&#39;Gitalk&#39;],
+	  perPage: 15,
+	  pagerDirection: 'last',
+	  createIssueManually: true,
+	  distractionFreeMode: false
+	})
+	gitalk.render('gitalk-container')
 </script>
-    
+	
 
-
+  
 
     <div class="scroll" id="post-nav-button">
         
